@@ -9,9 +9,11 @@ Description: R tools for integrating with the www.clinicalcodes.org web
 Depends:
     stringr,
     RCurl,
-    XML
+    XML,
+    tm
 Suggests:
     testthat,
     roxygen2,
 Collate:
     'clinicalcodes.R'
+    'keywords.R'
