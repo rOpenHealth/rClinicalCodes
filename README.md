@@ -41,6 +41,25 @@ depression_codes <- get_ClinicalCodes(article_id = 6, codelist_name = "depressio
 codelists = get_ClinicalCodes(article_id = 6)
 ```
 
+Research objects
+----------------
+
+The ClinicalCodes repository supplies article and codelist metadata in the form of a JSON research object. Research objects contains metadata describing the article (URI, abstract, ID, title, authors, doi, journal etc.), comments on the article, codelist metadata (associated articles, name, url, number of codes in the list, user field names, comments) and optional full codelists.
+
+rClinicalCodes provides functions to access these and to import them as R objects:
+
+### Import the research object for a single article
+
+```R
+RO <- research_object(article_ids = 5, download_codes = TRUE)
+```
+### Import for a number of articles
+
+```R
+#' ROs  <- research_object(article_ids = 3:5, download_codes = TRUE)
+```
+
+
 Extracting keywords
 -------------------
 
