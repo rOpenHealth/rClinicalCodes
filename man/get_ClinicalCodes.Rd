@@ -4,8 +4,7 @@
 Either specify the full path or the article id and codelist name
 If an article_id is supplied but no codelist_name, all codelists are downloaded and saved as a list}
 \usage{
-  get_ClinicalCodes(url = NULL, article_id = NULL,
-    codelist_name = NULL)
+get_ClinicalCodes(url = NULL, article_id = NULL, codelist_name = NULL)
 }
 \arguments{
   \item{url}{character representing the url of a codelist
@@ -18,15 +17,14 @@ If an article_id is supplied but no codelist_name, all codelists are downloaded 
   name associated with an article on www.ClinicalCodes.org}
 }
 \value{
-  a dataframe of clinical codes or a list of dataframes of
-  clinical codes
+a dataframe of clinical codes or a list of dataframes of
+clinical codes
 }
 \description{
-  Downloads clinical codes file from ClinicalCodes.org
-  Either specify the full path or the article id and
-  codelist name If an article_id is supplied but no
-  codelist_name, all codelists are downloaded and saved as
-  a list
+Downloads clinical codes file from ClinicalCodes.org Either
+specify the full path or the article id and codelist name
+If an article_id is supplied but no codelist_name, all
+codelists are downloaded and saved as a list
 }
 \examples{
 \dontrun{

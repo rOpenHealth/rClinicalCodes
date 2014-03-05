@@ -7,13 +7,13 @@ Title: rpubmed
 Description: R tools for integrating with the www.clinicalcodes.org web
     repository
 Depends:
+    R (>= 2.15)
+Imports:
     stringr,
     RCurl,
     XML,
-    tm
+    tm,
+    RJSONIO
 Suggests:
     testthat,
     roxygen2,
-Collate:
-    'clinicalcodes.R'
-    'keywords.R'

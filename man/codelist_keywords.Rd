@@ -2,8 +2,8 @@
 \alias{codelist_keywords}
 \title{Extract keywords from clinicla code lists}
 \usage{
-  codelist_keywords(codelist,
-    keyword_column = "description", extra_stopwords = NULL)
+codelist_keywords(codelist, keyword_column = "description",
+  extra_stopwords = NULL)
 }
 \arguments{
   \item{codelist}{a dataframe of clinical codes, such as
@@ -16,17 +16,17 @@
   further stopwords to remove}
 }
 \value{
-  character vector of keywords, sorted by frequency in the
-  list
+character vector of keywords, sorted by frequency in the
+list
 }
 \description{
-  This function takes a dataframe of clinical codes and
-  gives a vector of keywords, sorted by frequency
+This function takes a dataframe of clinical codes and gives
+a vector of keywords, sorted by frequency
 }
 \details{
-  All terms are converted to lower case. Common stopwords,
-  whitespace and punctuation are removed Optional
-  extra_stopwords vector
+All terms are converted to lower case. Common stopwords,
+whitespace and punctuation are removed Optional
+extra_stopwords vector
 }
 \examples{
 \dontrun{
