@@ -40,6 +40,16 @@ depression_codes <- get_ClinicalCodes(article_id = 6, codelist_name = "depressio
 codelists = get_ClinicalCodes(article_id = 6)
 ```
 
+Getting lists of all articles
+-----------------------------
+
+```R
+all_articles <- all_ClinicalCodes_articles()
+all_articles[1,]
+##                 Type                  Title Journal Year Authors                                                        link ID
+## 1 QOF Business Rules QOF Business Rules v24      NA 2012      NA https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/1/  1
+```
+
 Research objects
 ----------------
 
@@ -55,7 +65,26 @@ RO <- research_object(article_ids = 5, download_codes = TRUE)
 ### Import for a number of articles
 
 ```R
-ROs  <- research_object(article_ids = 3:5, download_codes = TRUE)
+ROs  <- research_object(article_ids = all_articles$ID[1:3], download_codes = TRUE)
+sapply(ROs, names)
+##       1: QOF Business Rules v24 2: QOF Business Rules v5 5: Withdrawing Performance Indicators: Retrospective 
+##  [1,] "URI"                     "URI"                    "URI"                                                
+##  [2,] "abstract"                "abstract"               "abstract"                                           
+##  [3,] "article_ID"              "article_ID"             "article_ID"                                         
+##  [4,] "article_title"           "article_title"          "article_title"                                      
+##  [5,] "article_type"            "article_type"           "article_type"                                       
+##  [6,] "authors"                 "authors"                "authors"                                            
+##  [7,] "codelists"               "codelists"              "codelists"                                          
+##  [8,] "comments"                "comments"               "comments"                                           
+##  [9,] "correspondence_author"   "correspondence_author"  "correspondence_author"                              
+## [10,] "correspondence_email"    "correspondence_email"   "correspondence_email"                               
+## [11,] "date_accessed"           "date_accessed"          "date_accessed"                                      
+## [12,] "doi"                     "doi"                    "doi"                                                
+## [13,] "fulltext"                "fulltext"               "fulltext"                                           
+## [14,] "journal"                 "journal"                "journal"                                            
+## [15,] "link"                    "link"                   "link"                                               
+## [16,] "publication_year"        "publication_year"       "publication_year"                                   
+## [17,] "uploading_user"          "uploading_user"         "uploading_user"       
 ```
 
 

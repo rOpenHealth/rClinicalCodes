@@ -15,7 +15,7 @@ all_ClinicalCodes_articles <- function(){
     links <- unlist(xpathSApply(article_table, "//a", xmlGetAttr, name = "href"))
     links <- links[str_detect(links, "/medcodes/article/")]
     table_data$link <- paste0(base_url, links)
-    table_data$ID <- str_match(links, "([0-9]+)/$")[,2]
+    table_data$ID <- as.integer(str_match(links, "([0-9]+)/$")[,2])
     table_data
 }
 
