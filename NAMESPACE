@@ -1,3 +1,6 @@
+export(all_ClinicalCodes_articles)
 export(codelists_for_ro)
 export(get_ClinicalCodes)
 export(research_object)
+import(XML)
+import(tm)

@@ -7,6 +7,7 @@
 #' All terms are converted to lower case.
 #' Common stopwords, whitespace and punctuation are removed
 #' Optional extra_stopwords vector
+#' @import tm
 #' @param codelist a dataframe of clinical codes, such as downloaded using the get_ClinicalCodes function
 #' @param keyword_column The column of the dataframe to extract keywords from
 #' @param extra_stopwords an optional character vector of further stopwords to remove
