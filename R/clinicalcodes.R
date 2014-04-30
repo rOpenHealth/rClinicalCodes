@@ -1,7 +1,6 @@
 #' Downloads clinical codes file from ClinicalCodes.org
 #' Either specify the full path or the article id and codelist name
 #' If an article_id is supplied but no codelist_name, all codelists are downloaded and saved as a list
-#' @import XML
 #' @param url character representing the url of a codelist download on www.clinicalcodes.org
 #' @param article_id integer representiong the id of a www.ClinicalCodes.org article
 #' @param codelist_name character representing a codelist name associated with an article on www.ClinicalCodes.org

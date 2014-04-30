@@ -32,6 +32,7 @@ codelists_for_ro <- function(ro){
 #' and optional full codelists.
 #' The individual codelists can be downloaded directly with the download_codes argument set to TRUE.
 #' Otherwise they can be associated later using the codelists_for_ro() function
+#' 
 #' @param article_ids integer representiong the id of a www.ClinicalCodes.org article
 #' @param download_codes logical should the individual code lists be downloaded as part of the research object?
 #' @param trim integer How many characters from titles should be included in list names for multiple codelists?
