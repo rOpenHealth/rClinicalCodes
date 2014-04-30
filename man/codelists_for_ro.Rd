@@ -22,7 +22,7 @@ url argument
 \examples{
 \dontrun{
 # get research object without codes
-RO <- research_object(article_id = 5, download_codes = FALSE)
+RO <- research_object(article_id = 2, download_codes = FALSE)
 # associate codes
 RO <- codelists_for_ro(RO)
 }

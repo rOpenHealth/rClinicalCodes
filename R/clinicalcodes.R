@@ -6,12 +6,17 @@
 #' @param codelist_name character representing a codelist name associated with an article on www.ClinicalCodes.org
 #' @export
 #' @return a dataframe of clinical codes or a list of dataframes of clinical codes
-#' @examples \dontrun{
+#' @examples {
 #' # Get codelist from url:
 #' angina_codes <- get_ClinicalCodes(url = "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/6/codelist/angina/download/")
+#' head(angina_codes)
+#' # get codelist by id and name
 #' depression_codes <- get_ClinicalCodes(article_id = 6, codelist_name = "depression")
-#' codelists = get_ClinicalCodes(article_id = 6)
-#' } 
+#' head(depression_codes)
+#' # Get all code lists for an article
+#' codelists <- get_ClinicalCodes(article_id = 2)
+#' sapply(codelists, nrow)
+#' }
 get_ClinicalCodes <- function(url = NULL, article_id = NULL, codelist_name = NULL){
     if(!is.null(url)){
         clinicalcodes_regex <- "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/(.)+/codelist/(.)+/download(/)*"

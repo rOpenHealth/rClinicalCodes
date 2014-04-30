@@ -6,10 +6,15 @@ David A. Springate 2014
 R tools for integrating with the [ClinicalCodes](www.clinicalcodes.org) web repository
 ---------------------------------------------------------------------------------------
 
-This in-development package provides an R API for downloading clinical code lists from the repository
+This package provides an R interface for downloading clinical code lists and research objects from the repository
 
+You can install the package from CRAN:
+```
+install.packages("rClinicalCodes")
+library(rClinicalCodes)
+```
 
-The package is not yet on CRAN but you can install from github using the devtools package:
+You can install the development version from github using the devtools package:
 
 ```R
 install.packages("devtools")
@@ -17,7 +22,7 @@ require(devtools)
 install_github("rClinicalCodes", "rOpenHealth")
 require(rClinicalCodes)
 ```
-The master branch will always be checked with devtools
+The master branch will always be checked with devtools::check
 
 Usage
 -----

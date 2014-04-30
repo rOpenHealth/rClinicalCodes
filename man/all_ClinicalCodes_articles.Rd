@@ -16,4 +16,9 @@ Article IDs from the list are included and can then be
 passed to the download functions to import codelists and
 research objects into R
 }
+\examples{
+{
+all_articles <- all_ClinicalCodes_articles()
+}
+}
 

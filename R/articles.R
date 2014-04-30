@@ -6,6 +6,9 @@
 #' to import codelists and research objects into R
 #' @export
 #' @return A dataframe of article information, links and IDs
+#' @examples {
+#' all_articles <- all_ClinicalCodes_articles()
+#' }
 all_ClinicalCodes_articles <- function(){
     base_url <- "https://clinicalcodes.rss.mhs.man.ac.uk"
     url <- getURL(paste0(base_url, "/medcodes/articles/"))
