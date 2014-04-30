@@ -10,7 +10,7 @@ LazyData: true
 NeedsCompilation: no
 Date: 2014-04-30
 Depends:
-    R (>= 2.15),
+    R (>= 2.15)
 Imports:
     stringr,
     RCurl,
@@ -19,4 +19,4 @@ Imports:
     tm
 Suggests:
     testthat,
-    roxygen2,
+    roxygen2
