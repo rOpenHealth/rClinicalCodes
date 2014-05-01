@@ -31,7 +31,8 @@ extra_stopwords vector
 \examples{
 {
 # Get codelist from url:
-angina_codes <- get_ClinicalCodes(url = "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/6/codelist/angina/download/")
+angina_codes <- get_ClinicalCodes(
+url = "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/6/codelist/angina/download/")
 codelist_keywords(angina_codes, extra_stopwords = c("good", "poor", "[x]"))
 }
 }

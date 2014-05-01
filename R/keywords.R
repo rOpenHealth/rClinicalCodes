@@ -12,7 +12,8 @@
 #' @return character vector of keywords, sorted by frequency in the list
 #' @examples {
 #' # Get codelist from url:
-#' angina_codes <- get_ClinicalCodes(url = "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/6/codelist/angina/download/")
+#' angina_codes <- get_ClinicalCodes(
+#' url = "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/6/codelist/angina/download/")
 #' codelist_keywords(angina_codes, extra_stopwords = c("good", "poor", "[x]"))
 #' } 
 codelist_keywords <- function(codelist, keyword_column = "description", extra_stopwords = NULL){

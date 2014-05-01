@@ -24,9 +24,10 @@ name If an article_id is supplied but no codelist_name, all
 codelists are downloaded and saved as a list
 }
 \examples{
-{
+\dontrun{
 # Get codelist from url:
-angina_codes <- get_ClinicalCodes(url = "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/6/codelist/angina/download/")
+angina_codes <- get_ClinicalCodes(
+url = "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/6/codelist/angina/download/")
 head(angina_codes)
 # get codelist by id and name
 depression_codes <- get_ClinicalCodes(article_id = 6, codelist_name = "depression")

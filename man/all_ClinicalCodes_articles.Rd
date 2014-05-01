@@ -17,7 +17,7 @@ passed to the download functions to import codelists and
 research objects into R
 }
 \examples{
-{
+\dontrun{
 all_articles <- all_ClinicalCodes_articles()
 }
 }
