@@ -23,7 +23,7 @@ get_ClinicalCodes <- function(url = NULL, article_id = NULL, codelist_name = NUL
     if(!is.null(url)){
         clinicalcodes_regex <- "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/(.)+/codelist/(.)+/download(/)*"
         if(!str_detect(url, clinicalcodes_regex)) stop("You must provide a valid www.ClinicalCodes.org codelist download link\n(try saving the link from the site that you want)")
-        url <- getURL(url)
+        url <- getURL(url, ssl.verifypeer = FALSE)
         read.csv(text = url)
     } else if(!is.null(article_id) && !is.null(codelist_name)){
         url <- getURL(sprintf("https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/%d/codelist/%s/download/", 
