@@ -8,7 +8,7 @@ R tools for integrating with the [ClinicalCodes](www.clinicalcodes.org) web repo
 
 This package provides an R interface for downloading clinical code lists and research objects from the repository
 
-You can install the package from CRAN (Submitted but not yety accepted!):
+You can install the package from CRAN:
 ```
 install.packages("rClinicalCodes")
 library(rClinicalCodes)
