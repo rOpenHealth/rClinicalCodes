@@ -1,8 +1,6 @@
 \name{get_ClinicalCodes}
 \alias{get_ClinicalCodes}
-\title{Downloads clinical codes file from ClinicalCodes.org
-Either specify the full path or the article id and codelist name
-If an article_id is supplied but no codelist_name, all codelists are downloaded and saved as a list}
+\title{Downloads clinical codes file from ClinicalCodes.org}
 \usage{
 get_ClinicalCodes(url = NULL, article_id = NULL, codelist_name = NULL)
 }
@@ -21,9 +19,8 @@ a dataframe of clinical codes or a list of dataframes of
 clinical codes
 }
 \description{
-Downloads clinical codes file from ClinicalCodes.org Either
-specify the full path or the article id and codelist name
-If an article_id is supplied but no codelist_name, all
+Either specify the full path or the article id and codelist
+name If an article_id is supplied but no codelist_name, all
 codelists are downloaded and saved as a list
 }
 \examples{

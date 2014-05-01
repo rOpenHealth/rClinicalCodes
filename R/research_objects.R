@@ -40,8 +40,8 @@ codelists_for_ro <- function(ro){
 #' @return an object of class ResearchObject (R representation of a ClinicalCodes research object)
 #' @examples \dontrun{
 #' # get research object and codes
-#' RO <- research_object(article_ids = 5, download_codes = TRUE)
-#' ROs  <- research_object(article_ids = 3:5, download_codes = TRUE)
+#' RO <- research_object(article_ids = 2, download_codes = FALSE)
+#' ROs  <- research_object(article_ids = 5:7, download_codes = FALSE)
 #' } 
 research_object <- function(article_ids, download_codes = FALSE, trim = 50){
     if(length(article_ids) > 1){

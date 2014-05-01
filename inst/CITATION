@@ -1,0 +1,8 @@
+bibentry("Manual",
+         title = "rClinicalCodes: interface for the www.clinicalcodes.org repository",
+         author = person("David A Springate"),
+         organization = "University of Manchester",
+         address      = "Manchester, UK",
+         year   = 2014,
+         url    = "http://www.clinicalcodes.org/",
+ )

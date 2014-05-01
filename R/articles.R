@@ -11,7 +11,7 @@
 #' }
 all_ClinicalCodes_articles <- function(){
     base_url <- "https://clinicalcodes.rss.mhs.man.ac.uk"
-    url <- getURL(paste0(base_url, "/medcodes/articles/"))
+    url <- getURL(paste0(base_url, "/medcodes/articles/"), ssl.verifypeer = FALSE)
     doc <- htmlParse(url)
     article_table <- getNodeSet(doc, "//table")[[1]]
     table_data <- readHTMLTable(article_table)

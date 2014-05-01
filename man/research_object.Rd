@@ -35,8 +35,8 @@ associated later using the codelists_for_ro() function
 \examples{
 \dontrun{
 # get research object and codes
-RO <- research_object(article_ids = 5, download_codes = TRUE)
-ROs  <- research_object(article_ids = 3:5, download_codes = TRUE)
+RO <- research_object(article_ids = 2, download_codes = FALSE)
+ROs  <- research_object(article_ids = 5:7, download_codes = FALSE)
 }
 }
 
