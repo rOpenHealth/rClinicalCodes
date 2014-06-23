@@ -1,6 +1,6 @@
 \name{codelist_keywords}
 \alias{codelist_keywords}
-\title{Extract keywords from clinicla code lists}
+\title{Extract keywords from clinical code lists}
 \usage{
 codelist_keywords(codelist, keyword_column = "description",
   extra_stopwords = NULL)
@@ -29,7 +29,7 @@ whitespace and punctuation are removed Optional
 extra_stopwords vector
 }
 \examples{
-{
+\dontrun{
 # Get codelist from url:
 angina_codes <- get_ClinicalCodes(
 url = "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/6/codelist/angina/download/")

@@ -1,4 +1,4 @@
-#' Extract keywords from clinicla code lists
+#' Extract keywords from clinical code lists
 #' 
 #' This function takes a dataframe of clinical codes and gives a vector of keywords, sorted by frequency
 #' 
@@ -10,7 +10,7 @@
 #' @param keyword_column The column of the dataframe to extract keywords from
 #' @param extra_stopwords an optional character vector of further stopwords to remove
 #' @return character vector of keywords, sorted by frequency in the list
-#' @examples {
+#' @examples \dontrun{
 #' # Get codelist from url:
 #' angina_codes <- get_ClinicalCodes(
 #' url = "https://clinicalcodes.rss.mhs.man.ac.uk/medcodes/article/6/codelist/angina/download/")
