@@ -1,7 +1,7 @@
 Package: rClinicalCodes
 Maintainer: David Springate <daspringate@gmail.com>
 Author: David Springate
-Version: 1.0.0
+Version: 1.0.1
 License: GPL-2
 Title: R tools for integrating with the www.clinicalcodes.org repository
 Description: R tools for integrating with the www.clinicalcodes.org web
@@ -19,4 +19,4 @@ Imports:
     tm
 Suggests:
     testthat,
-    roxygen2
+    roxygen2,
